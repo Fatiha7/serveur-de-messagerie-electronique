@@ -1,0 +1,111 @@
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+  }
+
+  nav {
+	
+	padding: 0.25vw;
+	right: 0;
+	margin-left: auto;
+	margin-top: -144px;
+	display: flex;
+	flex-flow: column;
+	font-size: 0;
+	font-family: Open Sans, sans-serif;
+	touch-action: none;
+  }
+  nav > input {
+
+	width: 4vw;
+	height: 4vw;
+  }
+  nav > .toggle {
+	margin-left: auto;
+	fill: hsl(210, 10%, 10%);
+	width: 4vw;
+	height: 4vw;
+	background-color: hsla(0, 0%, 100%, 0.85);
+	border-radius: 0.5vw;
+  }
+  nav > ul {
+	display: flex;
+	width: auto;
+	
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+	max-width: 240vw;
+	list-style: none;
+	padding: 0.25vw;
+	background-color: hsla(0, 0%, 100%, 0.85);
+	border-radius: 0.5vw 0 0.5vw 0.5vw;
+  }
+  nav > ul > li {
+	font-size: 1.1vw;
+	line-height: 0;
+	text-align: center;
+	flex: auto;
+	width: 8.5vw;
+	max-width:8.5vw;
+	height: 4vw;
+	padding: 0.5vw;
+	border-radius: 0.5vw;
+	color: hsl(338, 39%, 33%);
+	fill: hsl(0, 0%, 100%);
+  }
+  nav > ul > li > use {
+	height: 1vw;
+  }
+  nav > ul > li > svg {
+	height: 1vw;
+  }
+  nav > ul > li:hover {
+	background-color: hsla(0, 0%, 0%, 0.8);
+	fill: hsl(0, 0%, 100%);
+	color: hsl(338, 39%, 33%);
+  }
+  input#start ~ ul {
+	display: none;
+  }
+  input#start:checked ~ ul {
+	display: flex;
+  }
+  input#start:checked ~ .toggle {
+	border-radius: 0.5vw 0.5vw 0vw 0vw ;
+  }
+  input#start:checked ~ .toggle > svg {
+	transform: scale(0.25);
+	stroke: hsl(338, 39%, 33%);
+	stroke-width: 8;
+  }
+  article {
+	text-align: justify;
+	margin: 1rem;
+  }
+  h1 {
+	text-align: center;
+	font-size: 2em;
+	line-height: 1.8;
+  }
+  h3 {
+	text-align: center;
+  }
+  .p {
+	font-size: 1.2vw;
+	line-height: 1;
+	text-align: center;
+	flex: auto;
+	font-family:fantasy;
+	width: 4.5vw;
+	max-width: 4.5vw;
+	height: 5vw;
+	padding: 0.5vw;
+	border-radius: 0.5vw;
+	color: hsl(338, 39%, 33%);
+	fill: hsl(0, 0%, 100%);
+  }
+  
+  
+ 
